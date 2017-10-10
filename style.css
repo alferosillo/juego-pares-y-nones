@@ -1,0 +1,10 @@
+body { 
+background-image:url(img/Della_Nott_1920x1200.jpg);
+color:darkblue; 
+text-align: center;
+}
+
+
+#noQuiero,#elige,#jugador,#maquina,#ganas,#pierdes{
+display: none;
+}

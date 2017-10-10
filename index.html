@@ -6,32 +6,34 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link type="text/css" href="style.css" rel="stylesheet">
 	</head>
 
 	<body>
-<!--inicio pantalla 1-->
+
         <div class="container">
-    <div id="Bienvenida">
+           
+    <div id="bienvenida">
     <h1> Animate a jugar</h1>
-    <h2>Quieres jugar?
-        <div class="juego" id="siQuiero">
-        <label class="radio-inline">
-  <input type="radio" name="asunto" id="pares" value="consulta"> 
-            SI</label> </div>
-                 <label class="radio-inline">
-  <input type="radio" name="asunto" id="nones" value="consulta"> 
-                     NO</label> </h2></div>
-<!--            aqui acaba la pantalla nº 1-->
-       
-<!--         aqui empieza la pantalla nº 2   -->
-            <div class="negada" id="noQuiero">
+    <h2>Quieres jugar?   </h2>
+      
+        
+ <button id="si"type="button" class="btn btn-primary"  "btn-lg btn-block"> 
+      SI</button>
             
-        <p> tu te lo pierdes</p>
+                
+        <button id='no'type="button" class="btn btn-primary"  "btn-lg btn-block">No </button>  
+           
+            </div>
+
+            <div class="negada" id="noQuiero">
+        <h1>tu te lo pierdes</h1> 
+           <h2>"sigue jugando"</h2> 
         </div> 
-     <!--            aqui acaba la pantalla nº 2-->   
-     
-<!--     aqui empieza la pantalla nº3       -->
-    <p>Tienes que elegir entre pares o nones</p>
+            
+>
+    <div class="numerar" id="elige">
+    <h1>Tienes que elegir entre pares o nones</h1>
         <fieldset class="form-group">
           <label class="radio-inline">
   <input type="radio" name="asunto" id="pares" value="consulta"> 
@@ -40,16 +42,44 @@ Pares</label>
   <input type="radio" name="asunto" id="nones" value="consulta"> 
 Nones</label> 
         </fieldset>
-        </div>
-<!--    aqui acaba la pantalla nº3-->
-<!--    empiza la pantalla nº4-->
-    <div class="positivo">
+        
+        <button id='siguiente'>siguiente</button>
+            </div>          
+
+            
+            
+    <div class="positivo"  id="jugador">
       <h1>Elige un número</h1> 
         <p> que sea entre el 1 y 10</p>
         
+<input type="text" class="number" max="10" min ="0">
+        
+     
+              
+<button id="continua" class="btn btn-primary"  "btn-lg btn-block">Continua</button>
+          </div>
+
+      <div class="elegir" id="maquina">
+        <h1> Elige la máquina</h1>
+        <p>la máquina ha elegido</p>
+          
+   <button id="Juega" class="btn btn-primary"  "btn-lg btn-block">Juega</button>       
+          
+        </div>  
+
+        <div class="resultados" id="ganas">
+      
+        <h2> has ganado</h2>
+           
         </div>
-        
-        
-       
+
+            <div class="resultados" id="pierdes">
+            <h2>has perdido </h2>
+            </div>
+           
+            
+        </div>
+        <script type="text/javascript" src="consola.js"></script>
+        <script type="text/javascript" src="script.js"></script>
 	</body>
 </html>
