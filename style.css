@@ -5,6 +5,7 @@ text-align: center;
 }
 
 
-#noQuiero,#elige,#jugador,#maquina,#ganas,#pierdes{
+#noQuiero,#elige,#jugador,#maquina,#ganas,#pierdes, #final{
 display: none;
 }
+
